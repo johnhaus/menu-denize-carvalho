@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  before_action :set_items, only: [:show, :edit, :update, :destroy]
+  before_action :set_item, only: [:show, :edit, :update, :destroy]
 
   def index
     @items = Item.all
@@ -31,6 +31,7 @@ class ItemsController < ApplicationController
       redirect_to @item, notice: "Item successfully updated."
     else
       render :edit
+    end
   end
 
   def destroy
