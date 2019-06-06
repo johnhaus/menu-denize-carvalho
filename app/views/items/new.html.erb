@@ -1,0 +1,11 @@
+<%= simple_form_for @item do |f| %>
+  <%= f.error_notification %>
+
+  <div>
+    <%= f.input :name %>
+  </div>
+
+   <div>
+    <%= f.button :submit %>
+  </div>
+<% end %>
