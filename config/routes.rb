@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   resources :items
 
+  get "ad", to: "pages#web-ad"
+
   root to: 'pages#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
