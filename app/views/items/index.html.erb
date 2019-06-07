@@ -3,5 +3,7 @@
   <p>
     <%= item.name %>
   </p>
-  <%= link_to "Delete item", item_path(item), method: :delete %>
+  <button class="button">
+    <%= link_to "Delete item", item_path(item), method: :delete %>
+  </button>
 <% end %>
