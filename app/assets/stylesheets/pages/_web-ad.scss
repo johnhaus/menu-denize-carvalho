@@ -1,29 +1,7 @@
-.parallax-container {
-  max-width: 1060px;
-  margin: 0 auto;
-}
-
-section.module:last-child {
-  margin-bottom: 0;
-}
-section.module h3 {
-  margin-bottom: 40px;
-  font-size: 26px;
-}
-section.module p {
-  margin-bottom: 40px;
-  font-size: 24px;
-  font-weight: 300;
-}
-section.module p:last-child {
-  margin-bottom: 0;
-}
 section.module.content {
-  padding: 40px 0;
   background-color: rgba(207,216,220,0.5);
 }
 section.module.parallax {
-  padding: 240px 0;
   background-position: 0 0;
   background-position: 50% 0;
   background-repeat: repeat;
@@ -32,10 +10,17 @@ section.module.parallax {
 }
 section.module.parallax h1 {
   font-family: 'Dancing Script', cursive;
-  font-size: 40px;
+  font-size: 26px;
+  width: 475px;
+  position: fixed;
+  top: 20px;
+  left: 40px;
 }
 section.module.parallax h2 {
-  font-size: 28px;
+  font-size: 22px;
+  position: fixed;
+  top: 50px;
+  left: 160px;
 }
 section.module.parallax h1, h2 {
   color: black;
@@ -47,39 +32,78 @@ section.module.parallax h1, h2 {
 }
 section.module.parallax p {
   color: black;
-  font-size: 26px;
+  font-size: 16px;
   line-height: 1;
   font-weight: 700;
   text-align: center;
   text-shadow: 0 0 10px white;
+  width: 250px;
+  height: 20px;
 }
 section.module.parallax-1 {
-  min-height: 100vh;
-  background: image-url("Image5.jpg");
+  height: 450px;
+  width: 550px;
+  background: linear-gradient(tan 15%, transparent 20%, transparent 95%, tan 100%), image-url("Image5.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
   background-size: cover;
 }
 
-@media all and (min-width: 600px) {
-  section.module.parallax h1 {
-    font-size: 50px;
-  }
-  section.module h2 {
-    font-size: 42px;
-  }
-  section.module h3 {
-    font-size: 30px;
-  }
-  section.module p {
-    font-size: 26px;
-  }
-  section.module.parallax {
-    padding: 200px 0;
-  }
+.avatar-large1 {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid black;
+  position: fixed;
+  top: 280px;
+  left: 365px;
 }
-@media all and (min-width: 960px) {
-  section.module.parallax h1 {
-    font-size: 60px;
-  }
+
+.avatar-large2 {
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  border: 5px solid black;
+  position: fixed;
+  top: 370px;
+  left: 240px;
+}
+.avatar-large3 {
+  height: 135px;
+  width: 135px;
+  border-radius: 50%;
+  border: 5px solid black;
+  position: fixed;
+  top: 400px;
+  left: 390px;
+}
+
+.name {
+  position: fixed;
+  top: 460px;
+  left: 5px;
+}
+
+.phone1 {
+  position: fixed;
+  top: 480px;
+  left: 5px;
+}
+
+.phone2 {
+  position: fixed;
+  top: 500px;
+  left: 5px;
+}
+
+.email {
+  position: fixed;
+  top: 520px;
+  left: 5px;
+}
+
+section.tan {
+  height: 100px;
+  width: 550px;
+  background-color: tan;
 }
